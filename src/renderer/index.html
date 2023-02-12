@@ -3,17 +3,55 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link href="/dist/output.css" rel="stylesheet">
   <title>Diashower 3000</title>
-
-
 </head>
 
-<body class="container mx-auto">
-  <h1 class="text-center text-2xl tracking-widest">Diashower 3000 🚿</h2>
-  <div>
-    <img />
+<body class="m-2">
+  <!-- <h1 class="m-3 text-center tracking-widest">Diashower 3000 🚿</h2> -->
+
+  <div class="row">
+
+
+    <div id="settings" class="col-md-auto">
+      <h3>Einstellungen</h3>
+      <div class="mb-3">
+        <label for="timeIntervall" class="form-label">Zeitintervall (Sekunden)</label>
+        <input type="number" class="form-control" id="timeIntervall" min="0" max="9999999">
+      </div>
+
+      <button type="button" class="btn btn-outline-transparent">
+        <i class="bi bi-shuffle text-black"></i>
+      </button>
+      <button type="button" class="btn btn-outline-transparent">
+        <i class="bi bi-repeat text-black"></i>
+      </button>
+      <div>
+        <label>Hintergrundfarbe</label>
+      </div>
+    </div>
+
+
+    <div id="picture" class="col">
+      <img class="img-fluid" src="/img/winter_mountains_comic.jpg" />
+    </div>
+
   </div>
+
+
+  <div class="grid grid-flow-col auto-cols-max gap-2">
+    <div id="preview-1" class="border border col-start-1 w-32 h-20 border-black">
+    </div>
+    <div id="preview-2" class="border-solid border w-32 h-20 border-black">
+    </div>
+    <div id="preview-3" class="border-solid border w-32 h-20 border-black">
+    </div>
+    <div id="preview-4" class="border-solid border w-32 h-20 border-black">
+    </div>
+    <div id="preview-5" class="border-solid border col-end-auto w-32 h-20 border-black">
+    </div>
+  </div>
+
+
 </body>
 
 </html>

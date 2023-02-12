@@ -26,7 +26,10 @@
  * ```
  */
 
-import '../style/index.css';
-import '../../dist/output.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// loading of needed images
+require("../assets/winter_mountains_comic.jpg")
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');

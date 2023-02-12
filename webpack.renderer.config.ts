@@ -1,11 +1,27 @@
+// import CopyPlugin from 'copy-webpack-plugin';
+// import path from 'path';
 import type { Configuration } from 'webpack';
 
-import { rules } from './webpack.rules';
 import { plugins } from './webpack.plugins';
+import { rules } from './webpack.rules';
 
 rules.push({
   test: /\.css$/,
-  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+  use: ['style-loader', 'css-loader']
+
+});
+
+rules.push({
+  test: /\.(png|jpg|svg|jpeg|gif)$/i,
+  use: [
+    {
+      loader: 'file-loader',
+      options: {
+        name: 'img/[name].[ext]',
+        publicPath: '../.'
+      }
+    },
+  ],
 });
 
 export const rendererConfig: Configuration = {
