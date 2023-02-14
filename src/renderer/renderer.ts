@@ -26,8 +26,14 @@
  * ```
  */
 
+// $("color-picker").css("background", "blue");
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'jquery/dist/jquery';
+import '../style/custom.css';
+import './app';
 
 // loading of needed images
 require("../assets/winter_mountains_comic.jpg")

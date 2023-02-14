@@ -6,27 +6,45 @@
   <title>Diashower 3000</title>
 </head>
 
-<body class="m-2">
+<body class="bg-light m-2">
   <!-- <h1 class="m-3 text-center tracking-widest">Diashower 3000 🚿</h2> -->
-
-  <div class="row">
-
+  <div id="app"></div>
+  
+  <!-- <div class="row">
 
     <div id="settings" class="col-md-auto">
-      <h3>Einstellungen</h3>
-      <div class="mb-3">
+      <div class="row">
+        <h3>Einstellungen</h3>
+      </div>
+      <div class="row-md-auto mb-3">
         <label for="timeIntervall" class="form-label">Zeitintervall (Sekunden)</label>
-        <input type="number" class="form-control" id="timeIntervall" min="0" max="9999999">
+        <input type="number" class="form-control" id="timeIntervall" min="0" max="9999999" value="5">
       </div>
 
-      <button type="button" class="btn btn-outline-transparent">
-        <i class="bi bi-shuffle text-black"></i>
-      </button>
-      <button type="button" class="btn btn-outline-transparent">
-        <i class="bi bi-repeat text-black"></i>
-      </button>
-      <div>
-        <label>Hintergrundfarbe</label>
+      <div class="row">
+        <label class="row-md-auto">Wiedergabe</label>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-auto">
+          <button type="button" class="btn btn-transparent" data-bs-toggle="button">
+            <i class="bi bi-shuffle text-black"></i>
+          </button>
+        </div>
+        <div class="col-md-auto">
+          <button type="button" class="btn btn-transparent" data-bs-toggle="button" aria-pressed="true">
+            <i class="bi bi-repeat text-black"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+
+        <div class="col-md-auto">
+          <label>Hintergrundfarbe</label>
+        </div>
+        <div class="col-md-auto">
+          <button id="color-picker" class="btn btn-dark"></button>
+        </div>
       </div>
     </div>
 
@@ -50,7 +68,7 @@
     <div id="preview-5" class="border-solid border col-end-auto w-32 h-20 border-black">
     </div>
   </div>
-
+ -->
 
 </body>
 

@@ -12,6 +12,17 @@ rules.push({
 });
 
 rules.push({
+  test: /\.jsx?$/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      exclude: /node_modules/,
+      presets: ['@babel/preset-react']
+    }
+  }
+})
+
+rules.push({
   test: /\.(png|jpg|svg|jpeg|gif)$/i,
   use: [
     {
